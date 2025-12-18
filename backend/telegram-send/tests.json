@@ -7,7 +7,7 @@
       "expectedStatus": 200
     },
     {
-      "name": "Test successful form submission",
+      "name": "Test form submission",
       "method": "POST",
       "path": "/",
       "body": {
@@ -15,6 +15,21 @@
         "phone": "+7 999 123-45-67",
         "message": "Тестовое сообщение",
         "source": "Веб-сайт"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test consent notification",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "message_type": "consent",
+        "user_id": "test-user-123",
+        "action": "accepted"
       },
       "expectedStatus": 200,
       "expectedBody": {

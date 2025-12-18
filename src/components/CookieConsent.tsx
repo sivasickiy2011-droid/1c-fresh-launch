@@ -19,12 +19,13 @@ export default function CookieConsent() {
     localStorage.setItem('cookieConsent', 'accepted');
     
     try {
-      await fetch('https://functions.poehali.dev/075a5669-28e4-4134-a210-d0f245c3c818', {
+      await fetch('https://functions.poehali.dev/09d20db6-66dc-4441-860c-48bebddba56c', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          message_type: 'consent',
           user_id: userId,
           action: 'accepted'
         })
