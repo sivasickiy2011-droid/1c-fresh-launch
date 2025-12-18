@@ -1,5 +1,4 @@
 {
   "bitrix-create-deal": "https://functions.poehali.dev/c061e2f0-8081-472e-98a2-107053b0c16f",
-  "telegram-send": "https://functions.poehali.dev/09d20db6-66dc-4441-860c-48bebddba56c",
-  "telegram-notify": "https://functions.poehali.dev/075a5669-28e4-4134-a210-d0f245c3c818"
+  "telegram-send": "https://functions.poehali.dev/09d20db6-66dc-4441-860c-48bebddba56c"
 }
